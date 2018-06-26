@@ -1417,6 +1417,35 @@
             </code>
             </example>
         </member>
+        <member name="P:OpenQA.Selenium.Edge.EdgeOptions.UseInPrivateBrowsing">
+            <summary>
+            Gets or sets a value indicating whether the browser should be launched using
+            InPrivate browsing.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Edge.EdgeOptions.StartPage">
+            <summary>
+            Gets or sets the URL of the page with which the browser will be navigated to on launch.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Edge.EdgeOptions.AddExtensionPath(System.String)">
+            <summary>
+            Adds a path to an extension that is to be used with the Edge driver.
+            </summary>
+            <param name="extensionPath">The full path and file name of the extension.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Edge.EdgeOptions.AddExtensionPaths(System.String[])">
+            <summary>
+            Adds a list of paths to an extensions that are to be used with the Edge driver.
+            </summary>
+            <param name="extensionPathsToAdd">An array of full paths with file names of extensions to add.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Edge.EdgeOptions.AddExtensionPaths(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Adds a list of paths to an extensions that are to be used with the Edge driver.
+            </summary>
+            <param name="extensionPathsToAdd">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of full paths with file names of extensions to add.</param>
+        </member>
         <member name="M:OpenQA.Selenium.Edge.EdgeOptions.AddAdditionalCapability(System.String,System.Object)">
             <summary>
             Provides a means to add additional capabilities not yet added as type safe options
@@ -2075,7 +2104,7 @@
             <summary>
             Returns the Firefox driver filename for the currently running platform
             </summary>
-            <returns>The file name of the Chrome driver service executable.</returns>
+            <returns>The file name of the Firefox driver service executable.</returns>
         </member>
         <member name="T:OpenQA.Selenium.Firefox.FirefoxExtension">
             <summary>
@@ -2227,7 +2256,7 @@
         <member name="M:OpenQA.Selenium.Firefox.FirefoxOptions.AddAdditionalCapability(System.String,System.Object)">
             <summary>
             Provides a means to add additional capabilities not yet added as type safe options
-            for the Chrome driver.
+            for the Firefox driver.
             </summary>
             <param name="capabilityName">The name of the capability to add.</param>
             <param name="capabilityValue">The value of the capability to add.</param>
@@ -2410,6 +2439,12 @@
         <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.AddWebDriverExtension">
             <summary>
             Adds the WebDriver extension for Firefox to the profile.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.RemoveWebDriverExtension">
+            <summary>
+            Removes the WebDriver extension for Firefox to the profile, for use with non-legacy
+            FirefoxDriver instances that use geckodriver.
             </summary>
         </member>
         <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.InternalSetProxyPreferences(OpenQA.Selenium.Proxy)">
@@ -10255,6 +10290,14 @@
             <param name="elementId">The ID of this element.</param>
             <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement" /> with the specified ID.</returns>
         </member>
+        <member name="M:OpenQA.Selenium.Remote.RemoteWebDriver.CreateElement(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Creates a <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement" /> with the specified ID and element attributes.
+            </summary>
+            <param name="elementId">The ID of this element.</param>
+            <param name="elementDictionary">The attributes for this element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement" /> with the specified ID.</returns>
+        </member>
         <member name="M:OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptCommand(System.String,System.String,System.Object[])">
             <summary>
             Executes JavaScript in the context of the currently selected frame or window using a specific command.
@@ -11268,6 +11311,22 @@
             <param name="executablePath">The full path to the SafariDriver executable.</param>
             <param name="executableFileName">The file name of the SafariDriver executable.</param>
             <param name="port">The port on which the SafariDriver executable should listen.</param>
+        </member>
+        <member name="P:OpenQA.Selenium.Safari.SafariDriverService.UseLegacyProtocol">
+            <summary>
+            Gets or sets a value indicating whether to use the default open-source project
+            dialect of the protocol instead of the default dialect compliant with the
+            W3C WebDriver Specification.
+            </summary>
+            <remarks>
+            This is only valid for versions of the driver for Safari that target Safari 12
+            or later, and will result in an error if used with prior versions of the driver.
+            </remarks>
+        </member>
+        <member name="P:OpenQA.Selenium.Safari.SafariDriverService.CommandLineArguments">
+            <summary>
+            Gets the command-line arguments for the driver service.
+            </summary>
         </member>
         <member name="P:OpenQA.Selenium.Safari.SafariDriverService.TerminationTimeout">
             <summary>

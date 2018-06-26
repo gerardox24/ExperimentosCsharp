@@ -11,10 +11,10 @@ namespace TelefonosCRUD.Test
         String urlInicial = "localhost:54686";
         ClientePage clientePage;
         TelefonoPage telefonoPage;
-        static Object[] lista=Excel.leerExcel(@"D:\data\Datos.xlsx", 5, 2);
-        static Object[] lista2 = Excel.leerExcel(@"D:\data\Datos.xlsx", 5, 2);
-        static Object[] lista3 = Excel.leerExcel(@"D:\data\Datos2.xlsx", 4, 1);
-        static Object[] lista4 = Excel.leerExcel(@"D:\data\Datos2.xlsx", 4, 1);
+        static Object[] lista=Excel.leerExcel(@"Datos1.xlsx", 5, 2);
+        static Object[] lista2 = Excel.leerExcel(@"Datos1.xlsx", 5, 2);
+        static Object[] lista3 = Excel.leerExcel(@"Datos2.xlsx", 4, 1);
+        static Object[] lista4 = Excel.leerExcel(@"Datos2.xlsx", 4, 1);
         [SetUp]
         public void inicioClase()
         {
@@ -28,7 +28,7 @@ namespace TelefonosCRUD.Test
          public void d_InsertarCliente(String pnombre,String apaterno, String amaterno, String pdni, String pdireccion)
          {
              try {
-                bool valorObtenido = true;// clientePage.insertar(pnombre, apaterno, amaterno, pdni, pdireccion);
+                bool valorObtenido = clientePage.insertar(pnombre, apaterno, amaterno, pdni, pdireccion);
              Assert.AreEqual(valorObtenido, true);
              }
              catch (Exception e)
@@ -42,7 +42,7 @@ namespace TelefonosCRUD.Test
         {
             try
             {
-                bool valorObtenido = true;//clientePage.Editar(pnombre, apaterno, amaterno, pdni, pdireccion);
+                bool valorObtenido = clientePage.Editar(pnombre, apaterno, amaterno, pdni, pdireccion);
                 Assert.AreEqual(valorObtenido, true);
             }
             catch (Exception e)
@@ -55,7 +55,7 @@ namespace TelefonosCRUD.Test
         {
             try
             {
-                bool valorObtenido = true;//clientePage.Eliminar();
+                bool valorObtenido = clientePage.Eliminar();
                 Assert.AreEqual(valorObtenido, true);
             }
             catch (Exception e)

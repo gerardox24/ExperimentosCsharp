@@ -22,3 +22,5 @@ C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\La
 C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\Laboratorio\ExperimentosCsharp\SeleniumTest\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
 C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\Laboratorio\ExperimentosCsharp\SeleniumTest\ConsoleApp1\obj\Debug\ConsoleApp1.dll
 C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\Laboratorio\ExperimentosCsharp\SeleniumTest\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\Laboratorio\ExperimentosCsharp\SeleniumTest\ConsoleApp1\bin\Debug\WebDriver.Support.dll
+C:\Users\Johnny Ramos\Documents\UPC\2018-1\Diseño y Experimentos de Software\Laboratorio\ExperimentosCsharp\SeleniumTest\ConsoleApp1\bin\Debug\WebDriver.Support.xml
