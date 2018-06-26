@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefonosCRUD", "TelefonosCRUD\TelefonosCRUD.csproj", "{418A27EA-F6BB-4A3A-B2F4-EF9ABCB8FD91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefonosCRUDTests", "TelefonosCRUDTests\TelefonosCRUDTests.csproj", "{1C179EBE-1BA9-49E2-9782-CEEAE35B5986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{418A27EA-F6BB-4A3A-B2F4-EF9ABCB8FD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{418A27EA-F6BB-4A3A-B2F4-EF9ABCB8FD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{418A27EA-F6BB-4A3A-B2F4-EF9ABCB8FD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C179EBE-1BA9-49E2-9782-CEEAE35B5986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C179EBE-1BA9-49E2-9782-CEEAE35B5986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C179EBE-1BA9-49E2-9782-CEEAE35B5986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C179EBE-1BA9-49E2-9782-CEEAE35B5986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
